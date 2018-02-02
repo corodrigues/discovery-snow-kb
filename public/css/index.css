@@ -1,0 +1,29 @@
+.container {
+    background-color: yellow;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    ". mainContent . side"
+    "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+}
+
+.mainContent{
+    grid-area: mainContent;
+    background-color: blue;
+}
+
+.side{
+    grid-area: side;
+    background-color: green;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
